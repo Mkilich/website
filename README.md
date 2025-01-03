@@ -14,7 +14,7 @@ Welcome to the **Website** repository! This is a simple web project designed to 
 - **HTML**: The structure of the website.
 - **CSS**: Styling and layout.
 - **JavaScript**: Adds interactivity and functionality.
-- [Add any additional technologies you are using, such as frameworks or libraries]
+- PHP: Server-side scripting for handling dynamic content and processing requests.
 
 ## Installation
 
