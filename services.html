@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neue Webseite</title>
+    <style>
+  /* Sayfa genel düzeni */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('images/logo.png') no-repeat center center/cover;
+    position: relative;
+    height: 300px; /* Header yüksekliği */
+    color: white;
+    text-align: center;
+}
+
+/* Logo düzeni */
+.header-logo img {
+    max-width: 150px; /* Logonun boyutunu istediğiniz şekilde ayarlayabilirsiniz */
+    height: auto;
+}
+
+/* Overlay (gölgeleme) */
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Saydam siyah katman */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Yazının üstte görünmesi için */
+}
+
+/* Menü düzeni */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    z-index: 2; /* Menü yazısının diğer katmanlardan ön planda olması için */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Bölümler */
+section {
+    padding: 20px;
+}
+
+/* Sayfa kaydırma */
+html {
+    scroll-behavior: smooth; /* Sayfa kaydırma efektini etkinleştirir */
+}
+
+section {
+    margin-top: 60px; /* Menü sabit olduğunda içerik menüye takılmasın diye boşluk ekleyin */
+}
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('default-hero.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-overlay">
+            <h1>Neue Webseite</h1>
+            <p>Willkommen auf unserer neuen Plattform</p>
+        </div>
+    </header>
+    
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Über uns</a>
+        <a href="services.html">Dienstleistungen</a>
+        <a href="project.html">Projekte</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Ihre Zukunft beginnt hier</h2>
+        <p>Erfahren Sie mehr über unsere innovativen Lösungen und Dienstleistungen.</p>
+        <a href="#contact" class="cta-button">Kontakt aufnehmen</a>
+    </section>
+
+    <section id="about">
+        <h2>Über uns</h2>
+        <p>Willkommen bei T & C Greenmaster! Unser Unternehmen wurde gegründet, um innovative und nachhaltige Energielösungen für Privatpersonen und Unternehmen zu bieten. Mit einem erfahrenen Team von Experten sind wir bestrebt, umweltfreundliche Technologien zugänglich und erschwinglich zu machen.</p>
+        <p>Unsere Mission ist es, die Welt zu einem besseren Ort zu machen, indem wir erneuerbare Energiequellen nutzen und unsere Umweltbelastung reduzieren. Wir glauben an die Kraft der Zusammenarbeit und setzen uns dafür ein, unsere Kunden auf ihrem Weg zu einer nachhaltigeren Zukunft zu unterstützen.</p>
+        <p>Warum T & C Greenmaster wählen? Wir bieten:</p>
+        <ul>
+            <li>Hochqualitative Dienstleistungen und Produkte</li>
+            <li>Erfahrene Berater und Techniker</li>
+            <li>Individuell angepasste Lösungen für Ihre Bedürfnisse</li>
+        </ul>
+        <p>Kontaktieren Sie uns noch heute und lassen Sie uns gemeinsam an einer grünen Zukunft arbeiten!</p>
+    </section>
+
+    <section id="services">
+        <h2>Dienstleistungen</h2>
+        <p>Wir bieten eine breite Palette an Dienstleistungen, die auf Ihre individuellen Bedürfnisse zugeschnitten sind:</p>
+        <ul>
+            <li><strong>Beratung:</strong> Unsere Experten analysieren Ihre Anforderungen und bieten maßgeschneiderte Lösungen für Ihre Energie- und Umweltziele.</li>
+            <li><strong>Projektmanagement:</strong> Wir begleiten Sie von der Planung bis zur Umsetzung und sorgen dafür, dass Ihre Projekte pünktlich und im Rahmen des Budgets abgeschlossen werden.</li>
+            <li><strong>Installation von Solaranlagen:</strong> Effiziente und nachhaltige Solarenergie-Lösungen für Ihr Zuhause oder Ihr Unternehmen.</li>
+            <li><strong>Wartung und Support:</strong> Wir sorgen dafür, dass Ihre Systeme immer optimal funktionieren.</li>
+            <li><strong>Energieeffizienz-Optimierung:</strong> Reduzieren Sie Ihren Energieverbrauch und sparen Sie Kosten mit unseren innovativen Technologien.</li>
+        </ul>
+        <p>Wir sind Ihr Partner für eine nachhaltige und effiziente Zukunft. Lassen Sie uns Ihre Vision verwirklichen!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projekte</h2>
+        <p>Ein Überblick über einige unserer erfolgreich abgeschlossenen Projekte.</p>
+        <!-- Projektgalerie kann hier eingefügt werden -->
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Lesen Sie die neuesten Artikel und Nachrichten.</p>
+        <!-- Blogeinträge können hier hinzugefügt werden -->
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Wir freuen uns, von Ihnen zu hören:</p>
+        <ul>
+            <li>Telefon: +49 123 456 7890</li>
+            <li>E-Mail: kontakt@neuewebseite.com</li>
+            <li>Adresse: Musterstraße 1, 12345 Berlin</li>
+        </ul>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Nachricht:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br>
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Neue Webseite. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
